@@ -1,6 +1,7 @@
+function speak() {
 
- $("#chat-area").text("here's the text I want to display!")
- 
-function (speak) {
+  var input = document.getElementById('input').value;
+
+  $("#chat-area").text(input);
 
 }
