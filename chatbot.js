@@ -1,7 +1,12 @@
+var responses = {
+	"Hi": "Hello my name is Eliza",
+	"How old are you": "2 weeks old",
+}
+
 function speak() {
 
-  var input = document.getElementById('input').value;
+  var userInput = $("#input").val();
+  var answer = responses[userInput];
 
-  $("#chat-area").text(input);
-
+  $('#chat-area').html(answer + "." + "</br>");
 }
