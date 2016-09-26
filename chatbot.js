@@ -6,7 +6,8 @@ var responses = {
 function speak() {
 
   var userInput = $("#input").val();
-  var answer = responses[userInput];
+  var response = responses[userInput];
 
-  $('#chat-area').html(answer + "." + "</br>");
+  $('#chat-area').prepend(response + "</br>");
+  $('#chat-area').prepend(userInput + "</br>");
 }
